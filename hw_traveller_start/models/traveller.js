@@ -33,10 +33,12 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
-  return this.journeys.map((journey) => {
-    if (!includes)
-  })
-};
+  let newList = this.journeys.map((journey) => {return journey.transport;})
+  return uniqueList = [...new Set(newList)];
+}
+// transports are mapped to newList
+// spread syntax includes them in a Set 
+
 
 
 module.exports = Traveller;
